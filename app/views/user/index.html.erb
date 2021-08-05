@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+
+    <title>CS 169A - Bistro</title>
+  </head>
+  <body>
+    <div id="alert">
+        <strong>WE HAVE A NEW PIZZA!!!!</strong>
+    </div>
+    <div id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="home">
+        <h1>Home</h1>
+        <%= image_tag('cafe', id: 'home', width: '500')%>
+    </div>
+    <div id="about">
+        <h1>About</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        
+    </div>
+    <div id="menu">
+        <h1>Menu</h1>
+        <ol>
+            <li>
+                <h3>Mushroom Pizza <span style="color: blue">(New)</span></h3>
+                <p>Wild Mushrooms (Shitake, Chanterelle, Portabella, Cremini Mushrooms), Mozzarella, 
+                Asiago Fresh, Green Scallons, Fresh Herbs, Infused Chanterelle Mushrooms, and Garlic Olive Oil.</p>
+            </li>
+            <li>
+                <h3>Corn Pizza</h3>
+                <p>WCorn, Chile Pasilla, Yellow Onions, Mozzarella, French Feta Cheese, Cilantro, Garlic 
+                    Olive Oil, and Mexican Key Limes.</p>
+            </li>
+            <li>
+                <h3>Green Pizza</h3>
+                <p>Assorted Organic Heirloom Tomatoes, Red Onions, Mozzarella, French Goat Cheese, 
+                    Fresh Herbs, and Garlic Olive Oil.</p>
+            </li>
+        </ol>
+    </div>
+    <div id="contact">
+        <h1>Contact Us</h1>
+        <form action="/action_page.php">
+            <label for="Name">Name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="Contact">Contact:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="Body">How can we help you?</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+            <p>We'll reply withing 3 business days.</p>
+        </form> 
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
